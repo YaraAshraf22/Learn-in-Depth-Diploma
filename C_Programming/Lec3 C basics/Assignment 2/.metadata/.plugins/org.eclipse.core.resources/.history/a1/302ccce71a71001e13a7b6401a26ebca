@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 22, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+
+/*Calculate sum of natural numbers*/
+
+void main ()
+{
+	int n, sum=0;
+	printf("Enter an integer: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d", &n);
+	for (i=n;i>=1;i--)
+	{
+		sum+=i;
+	}
+
+	printf("Sum = %d", sum);
+}

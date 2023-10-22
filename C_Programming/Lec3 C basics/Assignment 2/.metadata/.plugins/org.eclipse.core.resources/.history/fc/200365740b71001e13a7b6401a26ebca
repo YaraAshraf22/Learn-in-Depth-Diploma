@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 22, 2023
+ *      Author: HP
+ */
+
+# include "stdio.h"
+
+/*Check if a letter is a vowel or constant*/
+void main ()
+{
+	char letter;
+	printf("Enter a letter:");
+	fflush(stdin); fflush(stdout);
+	scanf("%c", &letter);
+
+}
+

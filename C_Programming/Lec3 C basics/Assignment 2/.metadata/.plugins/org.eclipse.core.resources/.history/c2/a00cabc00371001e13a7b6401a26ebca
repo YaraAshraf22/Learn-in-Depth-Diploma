@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 22, 2023
+ *      Author: HP
+ */
+
+# include "stdio.h"
+
+void main ()
+{
+	int x;
+	printf("Enter a number:");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&x);
+
+}
