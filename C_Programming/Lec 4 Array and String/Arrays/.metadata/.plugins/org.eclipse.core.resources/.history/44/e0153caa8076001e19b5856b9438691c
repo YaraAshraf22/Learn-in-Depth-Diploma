@@ -1,0 +1,43 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 29, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+
+/*Search an element in an array*/
+
+int main()
+{
+	int i, n_elements, array[30], input;
+	printf("Enter no of elements : ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d", &n_elements);
+
+	for(i=0;i<n_elements;i++)
+	{
+		scanf("\n%d", &array[i]);
+	}
+
+	printf("\nEnter the element to be searched: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d", &input);
+
+	for(i=0;i<n_elements;i++)
+		{
+			if(array[i]==input)
+			{
+				printf("\nNumber found at location = %d", i+1);
+				break;
+			}
+			else if((i==n_elements-1) && (array[i]!=input))
+			{
+				printf("\nNumber not found");
+			}
+		}
+
+
+	return 0;
+}

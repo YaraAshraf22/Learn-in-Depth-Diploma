@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 29, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+
+/*take n of elements from user and store in an array and calculate average of the numbers*/
+
+int main ()
+{
+	int i,n=0;
+	float array[n];
+	printf
+
+	for (i=0;i<n;i++)
+	{
+
+	}
+	return 0;
+}

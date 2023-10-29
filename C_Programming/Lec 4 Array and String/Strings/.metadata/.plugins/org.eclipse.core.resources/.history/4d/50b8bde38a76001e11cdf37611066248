@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 29, 2023
+ *      Author: HP
+ */
+
+
+#include "stdio.h"
+#include "string.h"
+
+/*Reverse string without library function*/
+
+int main ()
+{
+	char text[20];
+
+	printf("Enter a string: ");
+	fflush(stdin);fflush(stdout);
+	gets(text);
+	return 0;
+}

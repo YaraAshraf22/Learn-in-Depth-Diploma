@@ -1,0 +1,5 @@
+20:01:45 **** Incremental Build of configuration Debug for project Q3 ****
+Info: Internal Builder is used for build
+gcc -o Q3.exe main.o 
+Info: Nothing to build for Q3
+Info: Nothing to build for Q3

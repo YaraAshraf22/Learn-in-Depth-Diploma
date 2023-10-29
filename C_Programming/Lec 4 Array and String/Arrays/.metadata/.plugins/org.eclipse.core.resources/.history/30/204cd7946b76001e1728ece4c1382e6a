@@ -1,0 +1,54 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 29, 2023
+ *      Author: HP
+ */
+
+/*Find transpose of a matrix*/
+
+#include "stdio.h"
+int main()
+{
+	int m,n,r,c;
+
+	printf("Enter rows and column of matrix: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d %d",&r,&c);
+
+	int a[r][c],b[c][r];
+
+	printf("Enter elements of matrix: \n");
+
+	for(m=0;m<r;m++)
+	{
+		for(n=0;n<c;n++)
+		{
+			printf("Enter element a%d%d: ",m+1,n+1);
+			fflush(stdin);fflush(stdout);
+			scanf("%d",&a[m][n]);
+		}
+	}
+
+	printf("Entered matrix: \n");
+	for(m=0;m<r;m++)
+	{
+		for(n=0;n<c;n++)
+		{
+			printf("%d\t",a[m][n]);
+		}
+		printf("\n");
+	}
+
+	printf("Transpose of matrix: \n");
+	for(m=0;m<c;m++)
+	{
+		for(n=0;n<r;n++)
+		{
+			b[m][n]=a[n][m];
+			printf("%d\t",b[m][n]);
+		}
+		printf("\n");
+	}
+	return 0;
+}

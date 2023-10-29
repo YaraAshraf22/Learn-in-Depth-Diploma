@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 29, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+#include "string.h"
+
+/*Find the frequency of characters in a string*/
+
+int main ()
+{
+	int text[50];
+	char x;
+	printf("Enter a string\n");
+	fflush(stdin);fflush(stdout);
+	gets(text);
+
+	printf("Enter a character\n");
+	fflush(stdin);fflush(stdout);
+	scanf("%c", x);
+
+
+	return 0;
+}
+

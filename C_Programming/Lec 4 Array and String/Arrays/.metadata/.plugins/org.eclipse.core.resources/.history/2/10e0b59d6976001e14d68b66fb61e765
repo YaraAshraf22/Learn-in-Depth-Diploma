@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 29, 2023
+ *      Author: HP
+ */
+
+/*Find transpose of a matrix*/
+
+#include "stdio.h"
+int main()
+{
+	int r,c;
+	printf("Enter rows and column of matrix: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d %d",&r,%c);
+	printf("Enter elements of matrix: \n");
+
+return 0;
+}

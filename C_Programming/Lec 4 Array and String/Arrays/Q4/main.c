@@ -1,0 +1,48 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 29, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+
+/*c program to insert an element in an array*/
+int main()
+{
+	int array[30],i,z,n_elements, input, location;
+	printf("Enter no of elements: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&n_elements);
+
+	for(i=0;i<n_elements;i++)
+	{
+		scanf("%d",&array[i]);
+	}
+
+	printf("\nEnter the element that must be inserted : ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&input);
+
+	printf("\nEnter the location :  ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&location);
+
+	for(i=0;i<n_elements;i++)
+	{
+		if(i==(location-1))
+		{
+			for(z=n_elements;z>(location-1);z--)
+			{
+				array[z]=array[z-1];
+			}
+			array[i]= input;
+		}
+	}
+
+	for(i=0;i<n_elements+1;i++)
+	{
+		printf("%d\t", array[i]);
+	}
+	return 0;
+}

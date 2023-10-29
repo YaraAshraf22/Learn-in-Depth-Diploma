@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 29, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+
+/*C program to find the sum of 2 matrix of order 2*2*/
+
+int main ()
+{
+	float martix1 [2][2], matrix2[2][2];
+	int r,c;
+
+	printf("Enter Matrix 1:\r\n");
+	for(r=0;r<2;r++)
+	{
+		for (c=0;c<2;c++)
+		{
+			fflush(stdin);fflush(stdout);
+			scanf("%g",&matrix1[r][c]);
+
+
+		}
+	}
+
+	for
+}
