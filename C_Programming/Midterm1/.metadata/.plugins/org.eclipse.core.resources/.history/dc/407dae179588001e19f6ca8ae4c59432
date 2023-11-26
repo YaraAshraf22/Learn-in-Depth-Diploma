@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 21, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+/* c function to count number of 1s in a binary number*/
+int main ()
+{
+	int num;
+	printf("Enter a number: ");
+	fflush(stdin); fflush(stdout);
+
+	return 0;
+}

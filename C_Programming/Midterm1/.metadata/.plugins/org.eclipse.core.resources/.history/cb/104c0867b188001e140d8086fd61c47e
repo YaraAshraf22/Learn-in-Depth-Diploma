@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 21, 2023
+ *      Author: HP
+ */
+/*c function to sum numbers from 1 to 100(without loop)*/
+
+#include "stdio.h"
+
+void sum (void);
+int main ()
+{
+
+	sum();
+	return 0;
+}
+
+void sum (void)
+{
+	static int i=1, s;
+	s+=i;
+	if (i<=100)
+	{
+		sum();
+	}
+	else
+		printf("Sum is %d", s);
+
+}

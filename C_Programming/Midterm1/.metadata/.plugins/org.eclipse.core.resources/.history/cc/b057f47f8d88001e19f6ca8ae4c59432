@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 21, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+
+/*c function to reverse digits in a number*/
+int main ()
+{
+
+	printf("enter a number");
+	fflush(stdin); fflush(stdout);
+
+	return 0;
+}

@@ -1,0 +1,65 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 23, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+/*c function to count max number of ones between two zeros*/
+
+int max_of_ones(int x);
+int main ()
+{
+
+	int x, y;
+	printf("Enter a number: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d", &x);
+
+	y=max_of_ones(x);
+	printf("Max no. of ones is: %d",y);
+	return 0;
+}
+
+int max_of_ones(int x)
+{
+	int i,j=0,m1,m2;
+	m1=m2=0;
+	int arr[10];
+	for(i=0;i<32;i++)
+	{
+		if((x>>i)&1)
+		{
+			m1++;
+			/*printf("1\n");*/
+		}
+		else if ((((x>>i)&1)==0) && (m1!=0))
+		{
+			arr[j]=m1;
+
+			printf("arr[%d]=%d\n",j,arr[j]);
+			/*printf("0\n");*/
+
+			j++;
+			m1=0;
+		}
+		/*else
+			printf("0\n");*/
+
+	}
+	for(i=0;i<j;i++)
+	{
+
+		if(arr[i+1]>arr[i])
+		{
+			m2=arr[i+1];
+		}
+		else
+		{
+			m2=arr[i];
+		}
+	}
+
+	return m2;
+}

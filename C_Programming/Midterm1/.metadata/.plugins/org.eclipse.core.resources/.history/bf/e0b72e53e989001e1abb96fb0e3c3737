@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 22, 2023
+ *      Author: HP
+ */
+
+/*c function to reverse words in string*/
+
+#include "stdio.h"
+int main ()
+{
+
+	int text[20];
+	int i;
+	printf("Enter string: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%s", text);
+	return 0;
+
+}
+

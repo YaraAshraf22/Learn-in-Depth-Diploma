@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 21, 2023
+ *      Author: HP
+ */
+
+/*c function to return unique number in array with one loop*/
+
+#include "stdio.h"
+
+int main ()
+{
+	int num, number_of_ones;
+	printf("Enter a number: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&num);
+	return 0;
+}

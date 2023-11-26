@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 22, 2023
+ *      Author: HP
+ */
+/*c function to take an array and reverse its elements*/
+
+int main()
+{
+	int n;
+	printf("Enter number of elements: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&n);
+	return 0;
+}
+
+
