@@ -1,0 +1,55 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+#include "string.h"
+#include "conio.h"
+
+struct SEmployee
+{
+	char m_Name[50];
+	int m_BirthDateDay;
+	int m_BirthDateMonth;
+	int m_BirthDateYear;
+	int m_Salary;
+};
+
+void main ()
+{
+	struct SEmployee employees[100], tempEmployee;
+	int count = 0; /*,i,j;*/
+	char firstName[50], secondName;
+
+	do
+	{
+		printf("Enter Employee first name: ");
+		scanf("%s", firstName);
+		printf("Enter Employee second name: ");
+		scanf("%s", secondName);
+
+		strcpy(employees[count].m_Name,firstName);
+		strcat(employees[count].m_Name," ");
+		strcat(employees[count].m_Name,secondName);
+
+		printf("Enter Employee Birth Date (day/month/year), example (23/3/1970): ");
+		scanf("%d/%d/%d",
+				&employees[count].m_BirthDateDay,
+				&employees[count].m_BirthDateMonth,
+				&employees[count].m_BirthDateYear
+		);
+
+		printf("Enter Employee salary: ");
+		scanf("%d", &employees[count].m_Salary);
+
+		count++;
+		if(count==100)
+			break;
+
+		printf("Press 'y' to continue: \r\n ");
+	}
+	while(getch()=='y');
+}

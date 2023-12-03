@@ -1,0 +1,34 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: HP
+ */
+
+/*C program to store info (name, roll, marks) of a student using structure*/
+
+#include "stdio.h"
+
+struct Sdata{
+	char name[50];
+	int roll;
+	int marks;
+};
+
+struct Sdata read(void)
+{
+	struct Sdata student;
+	printf("Enter name: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%s",student.name);
+
+
+	return student;
+}
+int main ()
+{
+	struct Sdata student;
+
+	return 0;
+
+}

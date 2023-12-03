@@ -1,0 +1,60 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: HP
+ */
+
+/*c program to add two distances in inch feet system using structures
+ * 1 foot = 12 inches
+ */
+
+#include "stdio.h"
+
+struct Sdistance {
+	int m_feet;
+	float m_inches;
+};
+
+struct Sdistance read(char*dist)
+{
+	struct Sdistance input;
+
+	printf("Enter info for %s distance: ",dist);
+
+	printf("\nEnter feet: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d", &input.m_feet);
+
+	printf("Enter inches: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f", &input.m_inches);
+	return input;
+}
+
+struct Sdistance add(struct Sdistance d1, struct Sdistance d2)
+{
+	struct Sdistance result;
+	result.m_feet= d1.m_feet + d2.m_feet;
+	result.m_inches= d1.m_inches + d2.m_inches;
+	return result;
+}
+
+void print_dist (struct Sdistance S)
+{
+	int n = (int)S.m_inches;
+	float m = S.m_inches - n;
+	S.m_feet = S.m_feet + n/12;
+
+	printf("Sum of distances= %d' - %g\"",S.m_feet, m);
+}
+
+int main ()
+{
+	struct Sdistance data[2], sum;
+	data[0]=read("1st");
+	data[1]=read("2nd");
+	sum=add(data[0], data[1]);
+	print_dist(sum);
+	return 0;
+}

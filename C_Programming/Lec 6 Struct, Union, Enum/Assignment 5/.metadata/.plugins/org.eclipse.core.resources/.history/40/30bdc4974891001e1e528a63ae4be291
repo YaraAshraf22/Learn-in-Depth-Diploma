@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: HP
+ */
+/*find area of a circle, passing arguments to macros*/
+
+#include "stdio.h"
+
+int main ()
+{
+	int r;
+	printf("Enter the radius: ");
+	fflush(stdin); fflush (stdout);
+	scanf("%d", &r);
+
+	return 0;
+}

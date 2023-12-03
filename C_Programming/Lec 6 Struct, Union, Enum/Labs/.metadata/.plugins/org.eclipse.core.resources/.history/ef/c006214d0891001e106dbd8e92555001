@@ -1,0 +1,87 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+#include "string.h"
+#include "conio.h"
+
+struct SEmployee
+{
+	char m_Name[50];
+	int m_BirthDateDay;
+	int m_BirthDateMonth;
+	int m_BirthDateYear;
+	int m_Salary;
+};
+
+int main ()
+{
+	struct SEmployee employees[100], tempEmployee;
+	int count = 0,i,j;
+	char firstName[50], secondName[50];
+
+
+	do
+	{
+		printf("Enter Employee first name: ");
+		fflush(stdin); fflush(stdout);
+		scanf("%s", firstName);
+
+		printf("Enter Employee second name: ");
+		fflush(stdin); fflush(stdout);
+		scanf("%s", secondName);
+
+		strcpy(employees[count].m_Name,firstName);
+		strcat(employees[count].m_Name," ");
+		strcat(employees[count].m_Name,secondName);
+
+		printf("Enter Employee Birth Date (day/month/year), example (23/3/1970): ");
+		fflush(stdin); fflush(stdout);
+		scanf("%d/%d/%d",
+				&employees[count].m_BirthDateDay,
+				&employees[count].m_BirthDateMonth,
+				&employees[count].m_BirthDateYear
+		);
+
+		printf("Enter Employee salary: ");
+		fflush(stdin); fflush(stdout);
+		scanf("%d", &employees[count].m_Salary);
+
+		count++;
+
+	}while(count<3);
+
+	for(i=0;i<count-1;i++)
+	{
+		for(j=i+1;j<count;j++)
+		{
+			if(
+					employees[i].m_BirthDateYear>employees[j].m_BirthDateYear ||
+					(employees[i].m_BirthDateYear==employees[j].m_BirthDateYear && employees[i].m_BirthDateMonth>employees[j].m_BirthDateMonth) ||
+					(employees[i].m_BirthDateYear==employees[j].m_BirthDateYear && employees[i].m_BirthDateMonth==employees[j].m_BirthDateMonth &&
+							employees[i].m_BirthDateDay==employees[j].m_BirthDateDay)
+			)
+			{
+				tempEmployee = employees[i];
+				employees[i] = employees[j];
+				employees[j] = tempEmployee;
+
+			}
+
+		}
+	}
+
+	for(i=0;i<count;i++)
+	{
+		printf("name: %s, Date: %d/%d/%d, Salary: %d\n",
+				employees[i].m_Name,
+				employees[i].m_BirthDateDay,employees[i].m_BirthDateMonth,employees[i].m_BirthDateYear,
+				employees[i].m_Salary);
+	}
+
+	return 0;
+}
