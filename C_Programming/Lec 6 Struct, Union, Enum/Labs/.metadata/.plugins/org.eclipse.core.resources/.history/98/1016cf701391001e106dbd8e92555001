@@ -1,0 +1,90 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+#include "string.h"
+
+/* Get and print employee data using nested structures and functions*/
+
+struct Sdate
+{
+	int m_Day;
+	int m_Month;
+	int m_Year;
+
+};
+
+struct SEmployee
+{
+	char m_Name[50];
+	struct Sdate m_BirthDate;
+	struct Sdate m_GraduationDate;
+	int m_Salary;
+};
+
+struct Sdate ReadDate (char datename[])
+{
+	struct Sdate date;
+	printf("enter %s (day/month/year) example (23/3/1970): ", datename);
+	fflush(stdin); fflush(stdout);
+	scanf("%d/%d/%d",
+			&date.m_Day,
+			&date.m_Month,
+			&date.m_Year
+	);
+	return date;
+}
+
+struct Semployee ReadEmployee()
+{
+	struct SEmployee employee;
+	char firstName[50], secondName[50];
+
+	printf("Enter Employee first name: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%s", firstName);
+
+	printf("Enter Employee second name: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%s", secondName);
+
+	strcpy(employee.m_Name,firstName);
+	strcat(employee.m_Name," ");
+	strcat(employee.m_Name,secondName);
+
+	employee.m_BirthDate=ReadDate("Birth Date");
+	employee.m_GraduationDate=ReadDate("Graduation Date");
+
+
+	printf("Enter Employee salary: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d", &employee.m_Salary);
+
+	return employee;
+}
+
+void PrintEmployee (struct SEmployee X)
+{
+	printf("Employee Data:\nName: %s\nBirth Date: %d/%d/%d\nGraduation Date: %d/%d/%d\nSalary: %d",
+			X.m_Name,
+			X.m_BirthDate.m_Day,X.m_BirthDate.m_Month,X.m_BirthDate.m_Year,
+			X.m_GraduationDate.m_Day,X.m_GraduationDate.m_Month,X.m_GraduationDate.m_Year,
+			X.m_Salary);
+}
+
+int main ()
+{
+
+	struct SEmployee X;
+	X=ReadEmployee();
+	PrintEmployee(X);
+
+	return 0;
+}
+
+
+

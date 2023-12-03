@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 1, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+
+struct Scomplex {
+	double m_R;
+	double m_I;
+};
+
+struct Scomplex Addcomplex(struct Scomplex A, struct Scomplex B)
+{
+	struct Scomplex C;
+
+
+	return C;
+}
+
+struct Scomplex Readcomplex(char name[])
+{
+	struct Scomplex c;
+	printf("Enter complex number %s, ex (5, -3):",name);
+	fflush(stdin); fflush(stdout);
+	scanf("%d, %d", &c.m_R, &c.m_I);
+	return c;
+}
+
+void Printcomplex
+int main ()
+{
+	struct Scomplex x,y,z;
+
+	return 0;
+}
