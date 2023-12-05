@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 5, 2023
+ *      Author: HP
+ */
+
+#include "stdio.h"
+/*
+ * calc sum weight of 5 boxes
+ */
+int main ()
+{
+	int i, x[5];
+	int sum=0;
+	int* px=x;
+
+	for (i=0; i<sizeof(x)/sizeof(int); i++)
+		scanf("%d\n",px+i);
+
+	for (i=0; i<sizeof(x)/sizeof(int); i++)
+		printf("%d\n",*px++);
+
+	px=x;
+	for (i=0; i<sizeof(x)/sizeof(int); i++, px++)
+		sum+= *px;
+
+	printf("sum= %d\n",sum);
+	return 0;
+}

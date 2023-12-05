@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 5, 2023
+ *      Author: HP
+ */
+
+//Pointer casting
+
+#include "stdio.h"
+
+int main ()
+{
+	long long int rand_address = 0x00000000FFFFAAAA;
+	printf("rand addr = %llx \n", rand_address);
+	return 0;
+}
