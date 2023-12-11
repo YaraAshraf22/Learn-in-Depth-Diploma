@@ -17,13 +17,19 @@ struct Semployee{
 };
 int main ()
 {
-	struct Semployee employee= {"Alex",1002};
-	struct Semployee *p_struct= &employee;
+	int i;
+	struct Semployee employee[3]={{"John", 1001},{"Alex", 1002},{"Taylor", 1003}};
 
-	struct Semployee* arr[5];
+	struct Semployee* arr[3]={&employee[0],&employee[1],&employee[2]};
 
 	/*ptr to array of 5 ptr to struct*/
-	struct Semployee *(*p_arr)[5];
+	struct Semployee *(*p_arr)[]=&arr;
 
+	for(i=0;i<3;i++)
+	{
+		printf("Employee [%d]:\n",i+1);
+		printf("Name: %s\n",(*p_arr)[i]->m_name);
+		printf("ID: %d\n\r",(*p_arr)[i]->m_ID);
+	}
 	return 0;
 }
