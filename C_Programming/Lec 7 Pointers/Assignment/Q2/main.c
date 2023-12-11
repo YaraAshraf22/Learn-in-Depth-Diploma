@@ -11,15 +11,20 @@
 
 int main()
 {
-	char arr[]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N',
-			'O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+	char arr[26];
 
 	int i;
 	char* p=arr;
 
 	for(i=0;i<26;i++,p++)
 	{
-		printf("%c\t", *p);
+		*p='A'+i;
+	}
+
+	p=arr;
+	for(i=0;i<26;i++,p++)
+	{
+		printf("%c ", *p);
 	}
 
 	return 0;
