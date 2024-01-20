@@ -1,6 +1,6 @@
 .globl reset
 reset:
-	ldr sp, =0x00011000
+	ldr sp, =stack_top
 	bl main
 stop: 
 	b stop
