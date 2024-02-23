@@ -1,0 +1,120 @@
+
+startup.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <_reset>:
+   0:	f7ff fffe 	bl	0 <main>
+   4:	e7fe      	b.n	4 <_reset+0x4>
+
+00000006 <Vector_handler>:
+   6:	e7fb      	b.n	0 <_reset>
+
+Disassembly of section .vectors:
+
+00000000 <.vectors>:
+   0:	20001000 	andcs	r1, r0, r0
+	...
+
+Disassembly of section .debug_line:
+
+00000000 <.debug_line>:
+   0:	00000037 	andeq	r0, r0, r7, lsr r0
+   4:	00200002 	eoreq	r0, r0, r2
+   8:	01020000 	mrseq	r0, (UNDEF: 2)
+   c:	000d0efb 	strdeq	r0, [sp], -fp
+  10:	01010101 	tsteq	r1, r1, lsl #2
+  14:	01000000 	mrseq	r0, (UNDEF: 0)
+  18:	00010000 	andeq	r0, r1, r0
+  1c:	72617473 	rsbvc	r7, r1, #1929379840	; 0x73000000
+  20:	2e707574 	mrccs	5, 3, r7, cr0, cr4, {3}
+  24:	00000073 	andeq	r0, r0, r3, ror r0
+  28:	05000000 	streq	r0, [r0, #-0]
+  2c:	00000002 	andeq	r0, r0, r2
+  30:	01200300 			; <UNDEFINED> instruction: 0x01200300
+  34:	0102242f 	tsteq	r2, pc, lsr #8
+  38:	Address 0x0000000000000038 is out of bounds.
+
+
+Disassembly of section .debug_info:
+
+00000000 <.debug_info>:
+   0:	00000022 	andeq	r0, r0, r2, lsr #32
+   4:	00000002 	andeq	r0, r0, r2
+   8:	01040000 	mrseq	r0, (UNDEF: 4)
+	...
+  14:	00000008 	andeq	r0, r0, r8
+  18:	00000000 	andeq	r0, r0, r0
+  1c:	0000000a 	andeq	r0, r0, sl
+  20:	00000068 	andeq	r0, r0, r8, rrx
+  24:	Address 0x0000000000000024 is out of bounds.
+
+
+Disassembly of section .debug_abbrev:
+
+00000000 <.debug_abbrev>:
+   0:	10001101 	andne	r1, r0, r1, lsl #2
+   4:	12011106 	andne	r1, r1, #-2147483647	; 0x80000001
+   8:	1b0e0301 	blne	380c14 <Vector_handler+0x380c0e>
+   c:	130e250e 	movwne	r2, #58638	; 0xe50e
+  10:	00000005 	andeq	r0, r0, r5
+
+Disassembly of section .debug_aranges:
+
+00000000 <.debug_aranges>:
+   0:	0000001c 	andeq	r0, r0, ip, lsl r0
+   4:	00000002 	andeq	r0, r0, r2
+   8:	00040000 	andeq	r0, r4, r0
+	...
+  14:	00000008 	andeq	r0, r0, r8
+	...
+
+Disassembly of section .debug_str:
+
+00000000 <.debug_str>:
+   0:	72617473 	rsbvc	r7, r1, #1929379840	; 0x73000000
+   4:	2e707574 	mrccs	5, 3, r7, cr0, cr4, {3}
+   8:	3a440073 	bcc	11001dc <Vector_handler+0x11001d6>
+   c:	626d452f 	rsbvs	r4, sp, #197132288	; 0xbc00000
+  10:	65646465 	strbvs	r6, [r4, #-1125]!	; 0xfffffb9b
+  14:	79535f64 	ldmdbvc	r3, {r2, r5, r6, r8, r9, sl, fp, ip, lr}^
+  18:	6d657473 	cfstrdvs	mvd7, [r5, #-460]!	; 0xfffffe34
+  1c:	69445f73 	stmdbvs	r4, {r0, r1, r4, r5, r6, r8, r9, sl, fp, ip, lr}^
+  20:	6d6f6c70 	stclvs	12, cr6, [pc, #-448]!	; fffffe68 <Vector_handler+0xfffffe62>
+  24:	69472f61 	stmdbvs	r7, {r0, r5, r6, r8, r9, sl, fp, sp}^
+  28:	654c2f74 	strbvs	r2, [ip, #-3956]	; 0xfffff08c
+  2c:	2d6e7261 	sfmcs	f7, 2, [lr, #-388]!	; 0xfffffe7c
+  30:	442d6e69 	strtmi	r6, [sp], #-3689	; 0xfffff197
+  34:	68747065 	ldmdavs	r4!, {r0, r2, r5, r6, ip, sp, lr}^
+  38:	7069442d 	rsbvc	r4, r9, sp, lsr #8
+  3c:	616d6f6c 	cmnvs	sp, ip, ror #30
+  40:	696e552f 	stmdbvs	lr!, {r0, r1, r2, r3, r5, r8, sl, ip, lr}^
+  44:	20332074 	eorscs	r2, r3, r4, ror r0
+  48:	65626d45 	strbvs	r6, [r2, #-3397]!	; 0xfffff2bb
+  4c:	64656464 	strbtvs	r6, [r5], #-1124	; 0xfffffb9c
+  50:	4c2f4320 	stcmi	3, cr4, [pc], #-128	; ffffffd8 <Vector_handler+0xffffffd2>
+  54:	33206365 			; <UNDEFINED> instruction: 0x33206365
+  58:	62614c20 	rsbvs	r4, r1, #32, 24	; 0x2000
+  5c:	73734120 	cmnvc	r3, #32, 2
+  60:	6d6e6769 	stclvs	7, cr6, [lr, #-420]!	; 0xfffffe5c
+  64:	00746e65 	rsbseq	r6, r4, r5, ror #28
+  68:	20554e47 	subscs	r4, r5, r7, asr #28
+  6c:	32205341 	eorcc	r5, r0, #67108865	; 0x4000001
+  70:	2e30332e 	cdpcs	3, 3, cr3, cr0, cr14, {1}
+  74:	Address 0x0000000000000074 is out of bounds.
+
+
+Disassembly of section .ARM.attributes:
+
+00000000 <.ARM.attributes>:
+   0:	00002041 	andeq	r2, r0, r1, asr #32
+   4:	61656100 	cmnvs	r5, r0, lsl #2
+   8:	01006962 	tsteq	r0, r2, ror #18
+   c:	00000016 	andeq	r0, r0, r6, lsl r0
+  10:	726f4305 	rsbvc	r4, pc, #335544320	; 0x14000000
+  14:	2d786574 	cfldr64cs	mvdx6, [r8, #-464]!	; 0xfffffe30
+  18:	0600334d 	streq	r3, [r0], -sp, asr #6
+  1c:	094d070a 	stmdbeq	sp, {r1, r3, r8, r9, sl}^
+  20:	Address 0x0000000000000020 is out of bounds.
+
