@@ -1,0 +1,25 @@
+/*
+ * CA.h
+ *
+ *  Created on: Mar 16, 2024
+ *      Author: HP
+ */
+
+#ifndef CA_H_
+#define CA_H_
+
+#include "states.h"
+
+//Define states
+
+enum {
+	CA_waiting,
+	CA_driving
+}CA_state_ID;
+
+
+//Declare CA state functions
+
+//State pointer to function
+
+#endif /* CA_H_ */

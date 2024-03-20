@@ -1,0 +1,27 @@
+/*
+ * CA.c
+ *
+ *  Created on: Mar 16, 2024
+ *      Author: HP
+ */
+
+#include "CA.h"
+
+//Variables of the block
+static int CA_speed = 0 ;
+static int CA_distance = 0;
+static int CA_threshold = 50;
+
+//State pointer to function
+void (*CA_state)();
+
+//Random distance Fn
+
+STATE_define(CA_waiting)
+{
+
+}
+STATE_define(CA_driving)
+{
+
+}

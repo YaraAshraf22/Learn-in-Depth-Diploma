@@ -1,0 +1,59 @@
+/*
+ * DC.c
+ *
+ *  Created on: Mar 16, 2024
+ *      Author: HP
+ */
+
+#include "DC.h"
+
+//Variables of the block
+static int DC_speed = 0 ;
+
+//State pointer to function
+void (*DC_state)();
+
+void DC_init ()
+{
+	//init PWM
+	printf("DC_init \n");
+}
+void DC_Motor_Speed (int s)
+{
+	DC_speed = s;
+	DC_state = STATE(DC_busy);
+	printf ("CA ----- speed = %d ----> DC\n", DC_speed);
+}
+STATE_define(DC_idle)
+{
+	//Set state
+	DC_state_ID = DC_idle;
+
+	//State Action
+	//DCll DC_Motor
+	DC_speed = 0;
+
+	//Event Check
+	//Get Random distance
+	DC_distance = US_Get_Distance_Random(45,55,1);
+	(DC_distance > DC_threshold)? (DC_state = STATE(DC_driving)) : (DC_state = STATE(DC_waiting));
+	printf("DC_waiting: distance = %d, speed = %d \n", DC_distance, DC_speed);
+
+}
+STATE_define(DC_busy)
+{
+	//Set state
+	DC_state_ID = DC_busy;
+
+	//State Action
+	//DCll DC_Motor
+	DC_speed = 30;
+
+	//Event Check
+	//Get Random distance
+	DC_distance = US_Get_Distance_Random(45,55,1);
+	(DC_distance > DC_threshold)? (DC_state = STATE(DC_driving)) : (DC_state = STATE(DC_waiting));
+	printf("DC_driving: distance = %d, speed = %d \n", DC_distance, DC_speed);
+
+}
+
