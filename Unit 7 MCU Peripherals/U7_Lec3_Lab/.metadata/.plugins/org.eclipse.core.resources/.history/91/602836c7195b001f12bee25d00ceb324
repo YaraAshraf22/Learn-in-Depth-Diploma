@@ -1,0 +1,59 @@
+/*
+ * STM32F103x6.h
+ *
+ *  Created on: Aug 15, 2024
+ *      Author: HP
+ */
+
+#ifndef INC_STM32F103X6_H_
+#define INC_STM32F103X6_H_
+
+//-----------------------------
+//Includes
+//-----------------------------
+
+#include "stdlib.h"
+#include <stdint.h>
+
+//-----------------------------
+//Base addresses for Memories
+//-----------------------------
+
+#define FLASH_MEMORY_BASE		0x08000000UL
+#define SYSTEM_MEMORY_BASE		0x1FFFF000UL
+#define SRAM_MEMORY_BASE		0x20000000UL
+
+#define PERIPHERALS_BASE						0x40000000UL
+#define Cortex_M3_INTERNAL_PERIPHERALS_BASE		0xE0000000UL
+
+//-----------------------------
+//Base addresses for AHB BUS Peripherals
+//-----------------------------
+//RCC
+
+//-----------------------------
+//Base addresses for APB2 BUS Peripherals
+//-----------------------------
+//GPIO
+//GPIO A,B fully included in LQFP48 Package
+
+//GPIO C,D partially included in LQFP48 Package
+
+//GPIO E not included in LQFP48 Package
+
+
+//-*-*-*-*-*-*-*-*-*-*-*-
+//Peripheral register:
+//-*-*-*-*-*-*-*-*-*-*-*
+//-*-*-*-*-*-*-*-*-*-*-*-
+//Peripheral Instants:
+//-*-*-*-*-*-*-*-*-*-*-*
+//-*-*-*-*-*-*-*-*-*-*-*-
+//clock enable Macros:
+//-*-*-*-*-*-*-*-*-*-*-*
+//-*-*-*-*-*-*-*-*-*-*-*-
+//Generic Macros:
+//-*-*-*-*-*-*-*-*-*-*-*
+
+
+#endif /* INC_STM32F103X6_H_ */

@@ -1,0 +1,22 @@
+/*
+ * STM32_F103C6_GPIO_Driver.c
+ *
+ *  Created on: Aug 15, 2024
+ *      Author: Yara Ashraf
+ */
+
+#include "STM32_F103C6_GPIO_Driver.h"
+
+/**================================================================
+* @Fn-
+* @brief -
+* @param [in] -
+* @param [out] -
+* @retval -
+* Note-
+*/
+
+void MCAL_GPIO_Init (GPIO_TypeDef* GPIOx, GPIO_PinConfig_t PinConfig)
+{
+
+}
