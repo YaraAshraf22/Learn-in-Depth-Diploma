@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Drivers/STM32_F103C6_Drivers/KEYPAD_Driver&apos;" deleteContents="false" description="Delete resource &apos;Drivers/STM32_F103C6_Drivers/KEYPAD_Driver&apos;" element1="/Drivers/STM32_F103C6_Drivers/KEYPAD_Driver" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1724170002549"/>
+</session>
