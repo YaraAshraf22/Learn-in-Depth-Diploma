@@ -1,0 +1,1014 @@
+17:59:26 **** Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+20:46:51 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+20:47:27 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+21:47:39 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+ 
+21:49:16 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:31:0:
+../Src/main.c: In function 'main':
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:64:19: error: expected expression before '{' token
+ #define EXTI0PA0  {EXTI0, GPIOA, GPIO_PIN_0, EXTI0_IRQ}
+                   ^
+../Src/main.c:39:22: note: in expansion of macro 'EXTI0PA0'
+  EXTI_CFG.EXTI_PIN = EXTI0PA0;
+                      ^~~~~~~~
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+21:50:57 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+ 
+21:57:50 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+21:57:56 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+ 
+22:34:00 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+In file included from ../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:8:0:
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:41:1: warning: no semicolon at end of struct or union
+ }EXTI_PinConfig_t;
+ ^
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:188:0: warning: "EXTI_IRQ_Enable" redefined
+ #define EXTI_IRQ_Enable      0
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:187:0: note: this is the location of the previous definition
+ #define EXTI_IRQ_Enable      1
+ 
+In file included from ../Src/main.c:31:0:
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:41:1: warning: no semicolon at end of struct or union
+ }EXTI_PinConfig_t;
+ ^
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:188:0: warning: "EXTI_IRQ_Enable" redefined
+ #define EXTI_IRQ_Enable      0
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:187:0: note: this is the location of the previous definition
+ #define EXTI_IRQ_Enable      1
+ 
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+22:34:23 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+In file included from ../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:8:0:
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:41:1: warning: no semicolon at end of struct or union
+ }EXTI_PinConfig_t;
+ ^
+In file included from ../Src/main.c:31:0:
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:41:1: warning: no semicolon at end of struct or union
+ }EXTI_PinConfig_t;
+ ^
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+22:39:54 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+22:59:48 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+ 
+23:03:20 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+ 
+00:02:21 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+00:28:20 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+In file included from D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_EXTI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:8:
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:34:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x80)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:36:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x88)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+In file included from D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc/Keypad.h:12:0,
+                 from ../HAL/Keypad.c:8:
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:34:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x80)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:36:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x88)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+In file included from D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32_F103C6_GPIO_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c:8:
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:34:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x80)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:36:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x88)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+In file included from ../Src/main.c:29:0:
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:34:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x80)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:36:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x88)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+In file included from D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc/LCD.h:12:0,
+                 from ../HAL/LCD.c:8:
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:34:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x80)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:36:0: warning: "NVIC_ICER0" redefined
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x88)
+ 
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc/STM32F103x6.h:35:0: note: this is the location of the previous definition
+ #define NVIC_ICER0        *(volatile uint32_t*)(Cortex_M3_NVIC_BASE + 0x84)
+ 
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+00:28:47 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+ 
+00:29:52 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+00:32:09 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+01:04:20 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c: In function 'MCAL_EXTI_GPIO_Init':
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:68:2: warning: implicit declaration of function 'Update_EXTI' [-Wimplicit-function-declaration]
+  Update_EXTI(EXTI_Config);
+  ^~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+01:06:58 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+ 
+01:23:57 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+15:39:52 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c: In function 'Update_EXTI':
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:37:36: error: expected expression before '=' token
+  AFIO->EXTICR[AFIO_EXTICR_index] & = ~(0xF << AFIO_EXTICR_position);
+                                    ^
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:34:10: warning: unused variable 'AFIO_EXTICR_position' [-Wunused-variable]
+  uint8_t AFIO_EXTICR_position = (EXTI_Config->EXTI_PIN.EXTI_InputLineNumber % 4) * 4;
+          ^~~~~~~~~~~~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/main.c: In function 'main':
+../Src/main.c:38:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:41:38 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c: In function 'Update_EXTI':
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:37:38: error: expected expression before '=' token
+  (AFIO->EXTICR[AFIO_EXTICR_index]) & = ~(0xF << AFIO_EXTICR_position);
+                                      ^
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:34:10: warning: unused variable 'AFIO_EXTICR_position' [-Wunused-variable]
+  uint8_t AFIO_EXTICR_position = (EXTI_Config->EXTI_PIN.EXTI_InputLineNumber % 4) * 4;
+          ^~~~~~~~~~~~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:41:53 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+15:54:35 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+ 
+15:55:01 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+15:56:56 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c: In function 'Update_EXTI':
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:19:30: error: expected ')' before ';' token
+           (x == GPIOD)? 3: 0);
+                              ^
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:43:38: note: in expansion of macro 'AFIO_GPIO_EXTI_Mapping'
+  AFIO->EXTICR[AFIO_EXTICR_index] |= (AFIO_GPIO_EXTI_Mapping(EXTI_Config->EXTI_PIN.GPIO_Port) << AFIO_EXTICR_position);
+                                      ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:58:29 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c: In function 'Update_EXTI':
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:19:30: error: expected ')' before ';' token
+           (x == GPIOD)? 3: 0);
+                              ^
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:43:39: note: in expansion of macro 'AFIO_GPIO_EXTI_Mapping'
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_Mapping(EXTI_Config->EXTI_PIN.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:58:52 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c: In function 'Update_EXTI':
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:19:29: error: expected ')' before ';' token
+           (x == GPIOD)? 3: 0;
+                             ^
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:43:39: note: in expansion of macro 'AFIO_GPIO_EXTI_Mapping'
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_Mapping(EXTI_Config->EXTI_PIN.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:58:59 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c: In function 'Update_EXTI':
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:19:30: error: expected ')' before ';' token
+           (x == GPIOD)? 3: 0);
+                              ^
+../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c:43:39: note: in expansion of macro 'AFIO_GPIO_EXTI_Mapping'
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_Mapping(EXTI_Config->EXTI_PIN.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:00:07 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+16:42:53 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: default.size.stdout
+ 
+ 
+ 
+16:43:58 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+ 
+16:51:34 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+16:53:20 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+16:59:46 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    668	      8	   1568	   2244	    8c4	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+17:31:54 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    788	      8	   1624	   2420	    974	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+17:32:04 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    788	      8	   1624	   2420	    974	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+17:34:27 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    944	      8	   1624	   2576	    a10	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+17:36:55 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1128	      8	   1624	   2760	    ac8	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+ 
+18:41:00 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1128	      8	   1624	   2760	    ac8	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+18:46:28 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1128	      8	   1624	   2760	    ac8	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+18:47:23 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1128	      8	   1624	   2760	    ac8	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+ 
+18:56:40 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32_F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+../Src/main.c: In function 'main':
+../Src/main.c:48:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2764	      8	   1632	   4404	   1134	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+19:02:39 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3716	      8	   1632	   5356	   14ec	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+19:04:09 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3716	      8	   1632	   5356	   14ec	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+ 
+19:05:57 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `wait_ms':
+D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/Debug/../Src/main.c:37: multiple definition of `wait_ms'
+HAL/LCD.o:D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/Debug/../HAL/LCD.c:131: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:52: U7_Lec4_STM32_EXTI.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:07:48 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3720	      8	   1632	   5360	   14f0	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.list
+Finished building: U7_Lec4_STM32_EXTI.bin
+ 
+ 
+20:34:31 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4088	      8	   1632	   5728	   1660	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+20:34:39 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4088	      8	   1632	   5728	   1660	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 

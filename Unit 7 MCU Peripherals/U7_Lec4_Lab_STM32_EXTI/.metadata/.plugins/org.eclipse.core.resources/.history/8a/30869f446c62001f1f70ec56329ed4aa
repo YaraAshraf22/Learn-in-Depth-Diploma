@@ -1,0 +1,57 @@
+/*
+ * STM32_F103C6_EXTI_Driver.c
+ *
+ *  Created on: Aug 23, 2024
+ *      Author: Yara Ashraf
+ */
+
+#include "STM32_F103C6_EXTI_Driver.h"
+
+/*
+ * ==================================================================================
+ * 								Generic Macros
+ * ==================================================================================
+ */
+
+/*
+ * ==================================================================================
+ * 								Generic Functions
+ * ==================================================================================
+ */
+
+/*
+ * ==================================================================================
+ * 								API Functions Definitions
+ * ==================================================================================
+ */
+
+/**================================================================
+ * @Fn			-MCAL_EXTI_GPIO_DeInit
+ * @brief 		-Reset EXTI registers and NVIC corresponding to IRQ Mask
+ * @param [in] 	-none
+ * @retval 		-none
+ * Note			-RCC doesn't have access to reset EXTI so registers will be reset manually
+ */
+void MCAL_EXTI_GPIO_DeInit (void)
+{
+	EXTI->IMR	= 0x00000000;
+	EXTI->EMR	= 0x00000000;
+	EXTI->RTSR	= 0x00000000;
+	EXTI->FTSR	= 0x00000000;
+	EXTI->SWIER = 0x00000000;
+
+	//rc_w1 cleared by writing '1' into the bit
+	EXTI->PR	= 0xFFFFFFFF;
+
+	//Disable EXTI IRQ from NVIC
+	NVIC_IRQ6_EXTI0_Disable;
+	NVIC_IRQ6_EXTI1_Disable;
+	NVIC_IRQ6_EXTI2_Disable;
+	NVIC_IRQ6_EXTI3_Disable;
+	NVIC_IRQ6_EXTI4_Disable;
+	NVIC_IRQ6_EXTI5_9_Disable;
+	NVIC_IRQ6_EXTI10_15_Disable;
+
+}
+void MCAL_EXTI_GPIO_Init (EXTI_PinConfig_t* EXTI_Config);
+void MCAL_EXTI_GPIO_Update (EXTI_PinConfig_t* EXTI_Config); //to be used during runtime if EXTI_Config needs to be updated

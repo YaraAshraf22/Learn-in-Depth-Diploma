@@ -1,0 +1,40 @@
+/*
+ * STM32_F103C6_EXTI_Driver.c
+ *
+ *  Created on: Aug 23, 2024
+ *      Author: Yara Ashraf
+ */
+
+#include "STM32_F103C6_EXTI_Driver.h"
+
+/*
+ * ==================================================================================
+ * 								Generic Macros
+ * ==================================================================================
+ */
+
+/*
+ * ==================================================================================
+ * 								Generic Functions
+ * ==================================================================================
+ */
+
+/*
+ * ==================================================================================
+ * 								API Functions Definitions
+ * ==================================================================================
+ */
+
+/**================================================================
+ * @Fn			-MCAL_EXTI_GPIO_DeInit
+ * @brief 		-Reset EXTI registers and NVIC corresponding to IRQ Mask
+ * @param [in] 	-none
+ * @retval 		-none
+ * Note			-RCC doesn't have access to reset EXTI so registers will be reset manually
+ */
+void MCAL_EXTI_GPIO_DeInit (void)
+{
+
+}
+void MCAL_EXTI_GPIO_Init (EXTI_PinConfig_t* EXTI_Config);
+void MCAL_EXTI_GPIO_Update (EXTI_PinConfig_t* EXTI_Config); //to be used during runtime if EXTI_Config needs to be updated

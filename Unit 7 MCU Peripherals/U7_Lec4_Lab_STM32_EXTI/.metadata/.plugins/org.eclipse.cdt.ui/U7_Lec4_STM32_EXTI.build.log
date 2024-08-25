@@ -1,0 +1,20 @@
+20:34:39 **** Incremental Build of configuration Debug for project U7_Lec4_STM32_EXTI ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/HAL/Inc" -I"D:/Embedded_Systems_Diploma/Lecs/Sem2/Unit 7 MCU Peripherals/Lec4/Lec/Lec4_Lab_STM32/U7_Lec4_STM32_EXTI/STM32_F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "U7_Lec4_STM32_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_Systems_Diploma\Lecs\Sem2\Unit 7 MCU Peripherals\Lec4\Lec\Lec4_Lab_STM32\U7_Lec4_STM32_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U7_Lec4_STM32_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U7_Lec4_STM32_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  U7_Lec4_STM32_EXTI.elf  > "U7_Lec4_STM32_EXTI.list"
+arm-none-eabi-objcopy  -O binary  U7_Lec4_STM32_EXTI.elf  "U7_Lec4_STM32_EXTI.bin"
+arm-none-eabi-size   U7_Lec4_STM32_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4088	      8	   1632	   5728	   1660	U7_Lec4_STM32_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: U7_Lec4_STM32_EXTI.bin
+Finished building: U7_Lec4_STM32_EXTI.list
+ 
+ 
+
+20:34:40 Build Finished. 0 errors, 0 warnings. (took 1s.456ms)
+

@@ -1,0 +1,76 @@
+/*
+ * STM32_F103C6_EXTI_Driver.h
+ *
+ *  Created on: Aug 23, 2024
+ *      Author: Yara Ashraf
+ */
+
+#ifndef STM32_F103C6_EXTI_DRIVER_H_
+#define STM32_F103C6_EXTI_DRIVER_H_
+
+//-----------------------------
+//Includes
+//-----------------------------
+
+#include "STM32F103x6.h"
+#include "STM32_F103C6_GPIO_Driver.h"
+
+//-----------------------------
+//User type definitions (structures)
+//-----------------------------
+
+typedef struct
+{
+	uint16_t		EXTI_InputLineNumber;
+	GPIO_TypeDef*	GPIO_Port;
+	uint16_t		GPIO_PIN;
+	uint16_t		IVT_IRQ_Number;
+
+}EXTI_GPIO_Mapping_t;
+
+typedef struct
+{
+	EXTI_GPIO_Mapping_t EXTI_PIN;	//Specifies the External Interrupt GPIO Mapping
+									//This parameter must be set based on @ref EXTI_define
+}EXTI_PinConfig_t;
+
+
+//-----------------------------
+//Macros Configuration References
+//-----------------------------
+
+#define EXTI0			0
+#define EXTI0_IRQ		6
+
+#define EXTI1_IRQ		7
+#define EXTI2_IRQ		8
+#define EXTI3_IRQ		9
+#define EXTI4_IRQ		10
+#define EXTI5_IRQ		23
+#define EXTI6_IRQ		23
+#define EXTI7_IRQ		23
+#define EXTI8_IRQ		23
+#define EXTI9_IRQ		23
+#define EXTI10_IRQ		40
+#define EXTI11_IRQ		40
+#define EXTI12_IRQ		40
+#define EXTI13_IRQ		40
+#define EXTI14_IRQ		40
+#define EXTI15_IRQ		40
+
+//@ref Module_REF_NAME_define
+//@ref EXTI_define
+//EXTI0
+#define EXTI0PA0		{EXTI0, GPIOA, GPIO_PIN_0, EXTI0_IRQ}
+#define EXTI0PB0		{EXTI0, GPIOB, GPIO_PIN_0, EXTI0_IRQ}
+#define EXTI0PC0		{EXTI0, GPIOC, GPIO_PIN_0, EXTI0_IRQ}
+#define EXTI0PD0		{EXTI0, GPIOD, GPIO_PIN_0, EXTI0_IRQ}
+
+/*
+* ===============================================
+* APIs Supported by "MCAL GPIO DRIVER"
+* ===============================================
+*/
+
+
+#endif /* STM32_F103C6_EXTI_DRIVER_H_ */
